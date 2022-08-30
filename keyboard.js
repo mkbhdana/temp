@@ -2,7 +2,7 @@ import React from "react";
 
 function Keyboard() {
   return (
-    <div>
+    <div className="keyboard-container">
 
 
       <div className="keyboard">
