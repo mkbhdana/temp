@@ -151,30 +151,6 @@ i.underscore {
     height: 100px;
 }
 
-/* caps lock, num lock, and scroll lock indicators */
-
-
-
-.lock {
-    margin: 5px 22px;
-    width: 135px;
-}
-
-.light-key {
-    padding: 3px 5px;
-    border-radius: 5px;
-}
-
-.off {
-    color: var(--key-color);
-    border: 1px solid var(--key-color);
-}
-
-.on {
-    color: var(--lock-on-color);
-    border: 1px solid var(--lock-on-color);
-}
-
 /* keyboard layout */
 .keyboard-container {
     width: 100%;
