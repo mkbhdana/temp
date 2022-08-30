@@ -223,8 +223,3 @@ i.underscore {
 .mini-group {
     margin-left: 28px;
 }
-
-.right {
-    display: flex;
-    justify-content: flex-start;
-}
