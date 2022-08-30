@@ -1,0 +1,229 @@
+/* colors*/
+
+:root {
+    --keyboard-bg-color: #d5e1eb;
+    --key-bg-color: #ffffff;
+    --key-color: #000000;
+
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 100%;
+    font-family: monospace;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+.container {
+
+    text-align: center;
+    font-size: 1.8em;
+
+    padding: 0.7em;
+}
+
+.app-container {
+    background-color: #d5e1eb;
+    margin: 0 auto;
+    width: 90%;
+    height: 70%;
+    /* height: 80vh; */
+    border-radius: 10px;
+    margin-top: 80px;
+    /* min-height: 50vh; */
+}
+
+
+
+
+
+.key {
+    background-color: var(--key-bg-color);
+    color: var(--key-color);
+    font-size: 12px;
+    width: 46px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 4px;
+    padding: 0 2px;
+    border-radius: 6px;
+    box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.key:hover,
+.key-press {
+    cursor: pointer;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2);
+    transform: translateY(3px);
+    -webkit-transform: translateY(2px);
+    transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+}
+
+.key-empty {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.key i {
+    margin-top: 1px;
+}
+
+.key .fas {
+    font-size: 11px;
+}
+
+.key.large {
+    padding-top: 5px;
+    font-size: 18px;
+}
+
+.key.large i {
+    font-size: 18px;
+    margin-top: 0px;
+}
+
+i.underscore {
+    margin-top: -8px;
+}
+
+/* special keys */
+
+.backspace,
+.tab {
+    width: 80px;
+}
+
+.enter {
+    width: 100px;
+}
+
+.spacebar {
+    width: 405px;
+    font-size: 18px;
+}
+
+.shift {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.l-s {
+    width: 95px;
+}
+
+.r-s {
+    width: 140px;
+}
+
+.c-menu i {
+    border: 1px solid #f5f5f5;
+    padding: 3px;
+}
+
+.num-special {
+    justify-content: flex-start;
+    padding-top: 5px;
+}
+
+.num-ins {
+    width: 100px;
+}
+
+.num-large {
+    margin-bottom: -58px;
+    height: 100px;
+}
+
+/* caps lock, num lock, and scroll lock indicators */
+
+
+
+.lock {
+    margin: 5px 22px;
+    width: 135px;
+}
+
+.light-key {
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+
+.off {
+    color: var(--key-color);
+    border: 1px solid var(--key-color);
+}
+
+.on {
+    color: var(--lock-on-color);
+    border: 1px solid var(--lock-on-color);
+}
+
+/* keyboard layout */
+.keyboard-container {
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.keyboard {
+    background-color: var(--keyboard-bg-color);
+    width: 1250px;
+    margin: 75px auto;
+    padding: 20px 10px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2),
+        0 40px 77px 0 rgba(0, 0, 0, 0.22);
+}
+
+.row {
+    display: grid;
+    grid-template-columns: auto 0.2fr 0.2fr;
+    grid-gap: 25px;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.lock1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 107px;
+}
+
+.group,
+.mini-group {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.mini-group {
+    margin-left: 28px;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-start;
+}
